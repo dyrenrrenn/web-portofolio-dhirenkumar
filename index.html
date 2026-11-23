@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiren Kumar — Fotografer & Videografer</title>
+  <meta name="description" content="Portofolio fotografi dan videografi Dhiren Kumar: visual bersih, sinematik, dan penuh makna untuk setiap momen." />
+  <meta name="theme-color" content="#050a1a" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="image/logo.png" />
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.)
+       Setelah website online, ganti og:image dengan alamat lengkap, contoh:
+       https://namadomain.com/image/og-cover.jpg (ukuran ideal 1200x630) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dhiren Kumar — Fotografer & Videografer" />
+  <meta property="og:description" content="Menangkap cahaya, merekam cerita. Lihat portofolio foto dan video saya." />
+  <meta property="og:image" content="image/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dhiren Kumar — Fotografer & Videografer" />
+  <meta name="twitter:description" content="Menangkap cahaya, merekam cerita. Lihat portofolio foto dan video saya." />
+  <meta name="twitter:image" content="image/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">
+      <img src="image/logo.png" alt="" class="logo-img" />
+      Dhiren Kumar<span>.</span>
+    </a>
+    <nav>
+      <a href="#karya">Karya</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak" class="nav-cta">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <!-- Video showreel latar (opsional): simpan file di video/showreel.mp4
+           Kalau file tidak ada, bagian ini otomatis disembunyikan. -->
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" id="heroVideo" src="video/showreel.mp4" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+
+      <p class="eyebrow reveal">Photography &amp; Videography</p>
+      <h1 class="reveal">Menangkap cahaya,<br /><em>merekam cerita.</em></h1>
+      <p class="lead reveal">Fotografer dan videografer yang menghadirkan visual bersih, sinematik, dan penuh makna untuk setiap momen.</p>
+      <a href="#karya" class="btn reveal">Lihat Karya <span aria-hidden="true">→</span></a>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- GALERI / SLIDER -->
+    <section class="works" id="karya">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 — Karya</p>
+        <h2>Hasil Foto &amp; Video</h2>
+      </div>
+
+      <div class="filters reveal" role="tablist" aria-label="Filter karya">
+        <button class="chip active" data-filter="all">Semua</button>
+        <button class="chip" data-filter="photo">Foto</button>
+        <button class="chip" data-filter="video">Video</button>
+      </div>
+
+      <div class="slider reveal" id="slider" aria-roledescription="carousel" aria-label="Galeri karya">
+        <button class="arrow prev" id="prev" aria-label="Sebelumnya">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+
+        <div class="stage" id="stage"></div>
+
+        <button class="arrow next" id="next" aria-label="Berikutnya">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="caption" id="caption" aria-live="polite">
+        <span class="counter" id="counter">01 / 06</span>
+        <h3 id="capTitle">Judul Karya</h3>
+        <p id="capMeta">Kategori</p>
+      </div>
+      <div class="dots" id="dots"></div>
+      <p class="hint">Geser, seret, atau gunakan tombol panah ← → · Klik foto tengah untuk memperbesar</p>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="about" id="tentang">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 — Tentang</p>
+        <h2>Visual yang bicara tanpa kata</h2>
+      </div>
+      <div class="about-grid">
+        <p class="reveal">Halo, saya <strong>Dhiren Kumar</strong>. Saya bekerja di bidang fotografi dan videografi dengan pendekatan minimalis: komposisi rapi, warna terkontrol, dan cerita yang jujur. Ganti paragraf ini dengan perkenalan singkat tentang dirimu.</p>
+        <ul class="stats reveal">
+          <li><b data-count="4">0</b><span>Tahun pengalaman</span></li>
+          <li><b data-count="69">0</b><span>Proyek selesai</span></li>
+          <li><b data-count="58">0</b><span>Klien puas</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="services" id="layanan">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — Layanan</p>
+        <h2>Apa yang saya kerjakan</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><span class="idx">01</span><h3>Foto Portrait &amp; Produk</h3><p>Sesi foto personal, brand, dan produk dengan pencahayaan bersih dan editing konsisten.</p></article>
+        <article class="card reveal"><span class="idx">02</span><h3>Event &amp; Dokumentasi</h3><p>Liputan acara, pernikahan, dan wisuda — momen penting terekam tanpa terlewat.</p></article>
+        <article class="card reveal"><span class="idx">03</span><h3>Video Sinematik</h3><p>Video promosi, aftermovie, dan konten sosial media dengan color grading sinematik.</p></article>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <!-- Teks di bawah hanya contoh. Ganti dengan testimoni klien asli
+         (minta izin klien dulu), atau hapus seluruh section ini kalau belum ada. -->
+    <section class="testi" id="testimoni">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 — Testimoni</p>
+        <h2>Kata mereka</h2>
+      </div>
+      <div class="cards">
+        <figure class="card quote reveal">
+          <blockquote>“Ganti dengan kutipan singkat dari klien pertamamu tentang hasil kerja dan pengalaman bekerja sama.”</blockquote>
+          <figcaption><b>Nama Klien</b><span>Jenis proyek</span></figcaption>
+        </figure>
+        <figure class="card quote reveal">
+          <blockquote>“Ganti dengan kutipan klien kedua. Satu sampai dua kalimat sudah cukup.”</blockquote>
+          <figcaption><b>Nama Klien</b><span>Jenis proyek</span></figcaption>
+        </figure>
+        <figure class="card quote reveal">
+          <blockquote>“Ganti dengan kutipan klien ketiga.”</blockquote>
+          <figcaption><b>Nama Klien</b><span>Jenis proyek</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact" id="kontak">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 — Kontak</p>
+        <h2>Mari berkolaborasi</h2>
+      </div>
+      <p class="lead reveal">Punya proyek atau ide? Hubungi saya dan kita wujudkan bersama.</p>
+      <div class="links reveal">
+        <a class="btn" href="mailto:dhirenkumar1228@gmail.com">dhirenkumar1228@gmail.com</a>
+        <a class="btn ghost" href="https://wa.me/6281134501208" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="https://instagram.com/dyrenrren" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Dhiren Kumar. All rights reserved.</span>
+    <a href="#home">Kembali ke atas ↑</a>
+  </footer>
+
+  <!-- TOMBOL WHATSAPP MELAYANG -->
+  <a class="wa-float" href="https://wa.me/6281134501208?text=Halo%20Dhiren%2C%20saya%20tertarik%20dengan%20jasa%20foto%2Fvideo%20kamu." target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+    <span class="wa-label">Chat saya</span>
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Tutup">✕</button>
+    <div class="lb-body" id="lbBody"></div>
+    <p class="lb-title" id="lbTitle"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
